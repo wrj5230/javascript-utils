@@ -1,29 +1,36 @@
 <template>
   <div id="app">
-    <Quiz :question="test" :answers="answers" />
+    <Quiz :question="questions" />
+    <Answer :question="answers" :answers="answers" />
   </div>
 </template>
 
 <script>
-import Quiz from './components/QuizChan.vue';
+import Question from "./components/Question.vue";
+import Answer from "./components/Answer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Quiz
+    Quiz: Question,
+    Answer: Answer,
   },
-  data(){
-    return{
-      test: 'testaa'
-      ,answers: [
-        {id:1,contents:'回答1'}
-        ,{id:2,contents:'回答2'}
-        ,{id:3,contents:'回答3'}
-        ,{id:4,contents:'回答4'}
-    ]
+  data() {
+    return {
+      questions: [
+        { id: 1, name: "問一", imageUrl: "", content: "この画像は誰でしょう" },
+      ],
+      answers: [
+        [
+          { id: 1, content: "回答1", hit: true },
+          { id: 2, content: "回答2", hit: false },
+          { id: 3, content: "回答3", hit: false },
+          { id: 4, content: "回答4", hit: false },
+        ],
+      ],
     };
-  }
-}
+  },
+};
 </script>
 
 <style>
