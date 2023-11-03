@@ -1,4 +1,4 @@
-# chan-quiz-proj
+# java-script-utils
 
 ## Project setup
 ```

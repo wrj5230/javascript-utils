@@ -1,5 +1,5 @@
 {
-  "name": "chan-quiz-proj",
+  "name": "javascript-utils",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -39,5 +39,17 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "```\r npm install\r ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrj5230/javascript-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrj5230/javascript-utils/issues"
+  },
+  "homepage": "https://github.com/wrj5230/javascript-utils#readme"
 }
